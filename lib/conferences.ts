@@ -1,0 +1,88 @@
+import { Conference } from "./types";
+
+export const conferences: Conference[] = [
+  {
+    id: "1",
+    name: "React Summit 2025",
+    date: "2025-03-15",
+    link: "https://reactsummit.com",
+    tags: ["JavaScript", "React", "Frontend", "Web Development"],
+  },
+  {
+    id: "2",
+    name: "TypeScript Congress",
+    date: "2025-04-22",
+    link: "https://typescriptcongress.com",
+    tags: ["TypeScript", "JavaScript", "Web Development"],
+  },
+  {
+    id: "3",
+    name: "Next.js Conf 2025",
+    date: "2025-05-10",
+    link: "https://nextjs.org/conf",
+    tags: ["JavaScript", "Next.js", "React", "Frontend"],
+  },
+  {
+    id: "4",
+    name: "PyCon 2025",
+    date: "2025-05-28",
+    link: "https://us.pycon.org",
+    tags: ["Python", "Backend", "Data Science"],
+  },
+  {
+    id: "5",
+    name: "GitHub Universe 2025",
+    date: "2025-06-15",
+    link: "https://githubuniverse.com",
+    tags: ["DevOps", "Git", "Open Source", "Cloud"],
+  },
+  {
+    id: "6",
+    name: "Node.js Interactive",
+    date: "2025-07-08",
+    link: "https://events.linuxfoundation.org/nodejs",
+    tags: ["JavaScript", "Node.js", "Backend"],
+  },
+  {
+    id: "7",
+    name: "AWS re:Invent",
+    date: "2025-12-01",
+    link: "https://reinvent.awsevents.com",
+    tags: ["Cloud", "AWS", "DevOps", "Infrastructure"],
+  },
+  {
+    id: "8",
+    name: "KubeCon + CloudNativeCon",
+    date: "2025-03-25",
+    link: "https://events.linuxfoundation.org/kubecon",
+    tags: ["Kubernetes", "Cloud", "DevOps", "Infrastructure"],
+  },
+  {
+    id: "9",
+    name: "JSConf 2025",
+    date: "2025-06-20",
+    link: "https://jsconf.com",
+    tags: ["JavaScript", "Web Development", "Frontend"],
+  },
+  {
+    id: "10",
+    name: "RustConf 2025",
+    date: "2025-08-15",
+    link: "https://rustconf.com",
+    tags: ["Rust", "Systems Programming", "Performance"],
+  },
+  {
+    id: "11",
+    name: "DevOps Days",
+    date: "2025-09-10",
+    link: "https://devopsdays.org",
+    tags: ["DevOps", "Cloud", "CI/CD", "Automation"],
+  },
+  {
+    id: "12",
+    name: "VueConf US",
+    date: "2025-05-05",
+    link: "https://vueconf.us",
+    tags: ["JavaScript", "Vue.js", "Frontend", "Web Development"],
+  },
+];
