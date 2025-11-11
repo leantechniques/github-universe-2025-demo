@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function ConferencesPage() {
   return (
-    <div className="min-h-screen bg-zinc-50 dark:bg-black py-12 px-4 sm:px-6 lg:px-8">
+    <div className="bg-zinc-50 dark:bg-black py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="mb-8">
           <h1 className="text-4xl font-bold tracking-tight text-black dark:text-zinc-50 mb-2">
