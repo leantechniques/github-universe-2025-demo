@@ -1,5 +1,30 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## TDD Agent 🎯
+
+This repository includes a **TDD (Test-Driven Development) Agent** to help you follow the red/green/refactor cycle.
+
+### Quick Start with TDD
+
+```bash
+# Run tests
+npm test
+
+# Run tests in watch mode
+npm run test:watch
+
+# Run tests with coverage
+npm run test:coverage
+```
+
+**Learn more:**
+- [TDD Agent Guide](TDD_AGENT_README.md) - How to use the TDD agent
+- [TDD Workflow](TDD_WORKFLOW.md) - Complete TDD development guide
+- [TDD Example](TDD_EXAMPLE.md) - Live example with email validation
+
+**Try it out:**
+The repository includes a live TDD example with failing tests. Try fixing the `validateEmail` function in `lib/utils.ts` to make the tests in `__tests__/lib/utils.test.ts` pass!
+
 ## Getting Started
 
 First, run the development server:
