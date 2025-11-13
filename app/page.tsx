@@ -1,8 +1,36 @@
+"use client";
+
 import Image from "next/image";
+import { useState, useCallback } from "react";
+import { Explosion } from "@/components/explosion";
+
+interface ExplosionData {
+  id: string;
+  x: number;
+  y: number;
+}
 
 export default function Home() {
+  const [explosions, setExplosions] = useState<ExplosionData[]>([]);
+
+  const handleClick = useCallback((e: React.MouseEvent) => {
+    const newExplosion: ExplosionData = {
+      id: `explosion-${Date.now()}-${Math.random()}`,
+      x: e.clientX,
+      y: e.clientY,
+    };
+    setExplosions((prev) => [...prev, newExplosion]);
+  }, []);
+
+  const removeExplosion = useCallback((id: string) => {
+    setExplosions((prev) => prev.filter((explosion) => explosion.id !== id));
+  }, []);
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+    <div 
+      className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black cursor-crosshair"
+      onClick={handleClick}
+    >
       <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
         <Image
           className="dark:invert"
@@ -60,6 +88,15 @@ export default function Home() {
           </a>
         </div>
       </main>
+      {explosions.map((explosion) => (
+        <Explosion
+          key={explosion.id}
+          id={explosion.id}
+          x={explosion.x}
+          y={explosion.y}
+          onComplete={removeExplosion}
+        />
+      ))}
     </div>
   );
 }
